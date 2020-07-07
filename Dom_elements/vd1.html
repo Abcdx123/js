@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toidicode.com javascript</title>
+</head>
+
+<body>
+    <div id="hello">Chào mừng các bạn đến với website học lập trình online </div>
+    <div class="toidicode">TOIDICODE.COM
+        <p class="toidicodes">Bacsic to advance</p>
+    </div>
+
+    <script type="text/javascript">
+        //
+        var element = document.querySelectorAll('div#hello');
+        //lấy ra nội dung của thẻ.
+        var content = element[0].innerText;
+        alert(content);
+
+        var a = document.getElementsByClassName('toidicodes');
+        alert(a[0].innerText);
+    </script>
+</body>
+
+</html>

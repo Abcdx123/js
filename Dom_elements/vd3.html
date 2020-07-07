@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dv">
+        <p>tag name p
+            <strong>
+                ssssss
+            </strong>
+        </p>
+        <p class="p1">tag name p2</p>
+        <p>tag name p3</p>
+    </div>
+    <script>
+        var temp = document.getElementById('dv');
+        var rs = temp.innerHTML;
+        console.log(rs);
+        alert(rs);
+
+        temp.setAttribute('id', 'dvdv');
+        temp.setAttribute('class', 'class1');
+        var rs2 = temp.outerHTML;
+
+        console.log(rs2);
+    </script>
+</body>
+
+</html>

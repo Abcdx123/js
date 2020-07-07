@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <i class="se"><center><h1>DOM </h1></center></i>
+
+    <p id='p1' style="color: blue;"> noi dung HTML</p>
+
+    <script lang="javaScript">
+        var temp = document.getElementsByClassName('se');
+        var rs = temp[0].innerHTML;
+        document.write(rs);
+
+        var temp2 = document.getElementById('p1');
+        var rs2 = temp2.innerHTML;
+        if (rs2.search('noi dung HTML') > -1)
+            temp2.outerHTML = '<h1>viết lại nội dung HTML</h1>';
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <input type="button" value="hien thi" onclick="get()">
+    <p id="result"></p>
+    <script>
+        function get() {
+            var date = new Date();
+            var rs = 'Ngày trong tháng: ' + date.getDate() + '<br />';
+            rs += 'Ngày trong tuần: ' + date.getDay() + '<br />';
+            rs += 'Tháng trong năm: ' + date.getMonth() + '<br />';
+            rs += 'Năm đầy đủ: ' + date.getFullYear() + '<br />';
+            rs += 'Giờ: ' + date.getHours() + '<br />';
+            rs += 'Phút: ' + date.getMinutes() + '<br />';
+            rs += 'Giây: ' + date.getSeconds() + '<br />';
+            rs += 'Mili Giây: ' + date.getMilliseconds() + '<br />';
+            rs += 'Time dạng mili giây: ' + date.getTime() + '<br />';
+            document.getElementById('result').innerHTML = rs;
+        }
+    </script>
+</body>
+
+</html>

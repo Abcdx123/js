@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <link rel="stylesheet" href="style_onclick.css">
+    <script src="style_onclick.js"></script>
+</head>
+
+<body>
+    <section class="se">
+        <h1 class="head">phép tính</h1>
+        <div class="tacvu">
+            <ul>
+                chon tac vu
+                <li><input type="button" value="giải" onclick="giai()"></li>
+                <li><input type="button" value="xóa" onclick="xoa()"> </li>
+                <li><input type="button" value="thoát" onclick="thoat()"></li>
+            </ul>
+        </div>
+        <div class="menu_chinh">
+            <form action="./onclick.html" class="form">
+                nhập a: <input type="text" placeholder="nhap so" name="tf1" id="tf1"> <br> nhập b: <input type="text" name="tf1" placeholder="nhap so" id="tf2"> <br> chọn phép toán
+                <div class="phep_tinh">
+                    <ul>
+                        <li> <input type="radio" name="cb" id="cong" checked> cộng</li>
+                        <li><input type="radio" name="cb" id="tru">trừ</li>
+                        <li><input type="radio" name="cb" id="nhan" checked> nhân</li>
+                        <li><input type="radio" name="cb" id="chia">chia</li>
+                    </ul>
+                </div>
+                ketqua: <input type="text" name="" id="kq" placeholder="0" disabled>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
